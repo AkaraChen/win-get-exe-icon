@@ -1,0 +1,29 @@
+{
+  "name": "win-get-exe-icon",
+  "version": "1.0.0",
+  "dependencies": {
+    "icon-extractor": "^1.0.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@akrc/tsconfig": "^1.1.0",
+    "electron": "29.3.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  },
+  "scripts": {
+    "build": "tsup",
+    "check": "tsc --noEmit",
+    "dev": "tsup --watch"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "peerDependencies": {
+    "electron": ">=12.0.0"
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  }
+}
